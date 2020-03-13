@@ -1,0 +1,16 @@
+<h1>
+  Pets
+</h1>
+<form method="post">
+  <label>Add pet:
+    <input name="pet">
+  </label>
+  <button>Submit</button>
+</form>
+<ul>
+  {{#each pets}}
+    <li>
+      {{this}}
+    </li>
+  {{/each}}
+</ul>
