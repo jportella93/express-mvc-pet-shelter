@@ -3,7 +3,7 @@ const renderIndexView = (req,res) => {
 }
 
 const renderNotFoundView = (req, res) => {
-  res.render('notFound', {title: 'Oopsie doopsie woobsie'})
+  res.status(404).render('notFound', {title: 'Not Found'})
 }
 
 module.exports = {
